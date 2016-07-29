@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-int factorial(int);
+int Evaluador(int);
 int dividir(int,int);
-int fac(int);
+int factorial(int);
 int main(){
 	int numerorecibido;
 	int opcionmenu;
@@ -17,7 +17,7 @@ int main(){
 		switch(opcionmenu){
 			case 1:
 				for(int i = 1;i <= 50000;i++){
-					sumafac = factorial(i);
+					sumafac = Evaluador(i);
 					if(sumafac == i){
 						std::cout<<i<<"\n";
 					}
@@ -45,13 +45,13 @@ int main(){
 }
 
 
-int factorial(int m){
+int Evaluador(int numero){
 	int residuo = 0;
 	int acumulador = 0;
-	while(m > 0){		
-		residuo = m%10;
-		acumulador += fac(residuo);
-		m = m/10;
+	while(numero > 0){		
+		residuo = numero%10;
+		acumulador += factorial(residuo);
+		numero  = numero/10;
 	}
 	return acumulador;
 }
@@ -75,9 +75,9 @@ int dividir(int primero,int segundo){
 		return 0;
 	}
 }
-int fac(int a){
+int factorial(int numero){
 	int acumular = 1;
-	for(int i = 1;i <= a;i++){
+	for(int i = 1;i <= numero;i++){
 		acumular=acumular*i;
 	}
 	return acumular;
