@@ -30,9 +30,9 @@ int main(){
 				std::cin>>numeroamigo;
 				temporal = dividir(numerorecibido,numeroamigo);
 				if(temporal == 1){
-					std::cout<<"Los numeros son amigos"; 
+					std::cout<<"\nLos numeros son amigos"; 
 				}else{
-					std::cout<<"No son amigos";	
+					std::cout<<"\nNo son amigos";	
 				}
 				break;
 			default:
