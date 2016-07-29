@@ -12,7 +12,7 @@ int main(){
 	int temporal;
 	char resp;
 	do{
-		std::cout<<"Opcion 1: FActorial\nOpcion 2: Divisor\nIngrese opcion: ";
+		std::cout<<"Opcion 1: Factorial\nOpcion 2: Divisor\nIngrese opcion: ";
 		std::cin>>opcionmenu;
 		switch(opcionmenu){
 			case 1:
@@ -68,7 +68,6 @@ int dividir(int primero,int segundo){
 			divisors+=i;
 		}
 	}
-
 	if((primero == divisors)&&(segundo==divisorp)){
 		return 1;
 	}else{
