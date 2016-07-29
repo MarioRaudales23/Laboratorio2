@@ -2,19 +2,20 @@
 #include <string>
 
 int factorial(int);
-int dividir(int);
+int dividir(int,int);
 
 int main(){
 	int numerorecibido;
 	int opcionmenu;
 	int sumafac;
+	int numeroamigo;
 	char resp;
 	do{
 		std::cout<<"Opcion 1: FActorial\nOpcion 2: Divisor\nIngrese opcion: ";
 		std::cin>>opcionmenu;
 		switch(opcionmenu){
 			case 1:
-				for(int i = 1;i < 10000000;i++){
+				for(int i = 1;i < 50000;i++){
 					sumafac = factorial(i);
 					if(sumafac == i){
 						std::cout<<i<<"\n";
@@ -22,6 +23,10 @@ int main(){
 				}
 				break;
 			case 2:
+				std::cout<<"Ingrese el numero a evaluar";
+				std::cin>>numerorecibido;
+				std::cout<<"Ingrese el segundo numero";
+				std::cin>>numeroamigo;
 				break;
 			default:
 				std::cout<<"Opcion no valida"; 
@@ -49,3 +54,8 @@ int factorial(int m){
 	}while(residuo != 0);
 	return sumatoriaresiduo;
 }
+/*int dividir(int primero,int segundo){
+	int divisorp;
+	int divisors;
+	for(int i = 0;);
+}*/
